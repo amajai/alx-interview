@@ -18,7 +18,7 @@ def canUnlockAll(boxes):
         d_boxes[i] = boxes[i]
 
     for key in keys:
-        if key not in unlocked_boxed:
+        if len(unlocked_boxed) < len(boxes) and key not in unlocked_boxed:
             keys += d_boxes[key]
             d_boxes[key] = []
             unlocked_boxed.add(key)
