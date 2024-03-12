@@ -8,7 +8,7 @@ def canUnlockAll(boxes):
     """
     Lockboxes
     """
-    if not isinstance(boxes, list) or not boxes:
+    if not isinstance(boxes, list) or not boxes or not boxes[0]:
         return False
     keys = boxes[0][:]
     d_boxes = {}
