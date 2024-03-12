@@ -10,7 +10,7 @@ def canUnlockAll(boxes):
     """
     if not isinstance(boxes, list) or not boxes:
         return False
-    keys = boxes[0]
+    keys = boxes[0][:]
     d_boxes = {}
     unlocked_boxed = {0}
 
